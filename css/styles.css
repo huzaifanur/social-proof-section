@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--White);
+}
+section {
+  padding: 2rem 0;
+}
+.main {
+  padding: 3rem 1.5rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.content-left {
+  color: var(--VeryDarkMagenta);
+  text-align: center;
+}
+.main-heading {
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 2rem;
+  padding-bottom: 1.8rem;
+}
+.description {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.rating-card {
+  max-width: 445px;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  background-color: var(--LightGrayishMagenta);
+}
+.star-icon-container {
+  padding: 0.3rem 0;
+}
+.star-icon-container span {
+  margin: 0 0.2rem;
+}
+.testimonials {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+
+/* ---------------- */
+/* Testimonial Card */
+/* ---------------- */
+
+.testimonial-card {
+  background-color: var(--VeryDarkMagenta);
+  color: var(--LightGrayishMagenta);
+  padding: 1.5rem 2rem;
+  border-radius: 0.7rem;
+  max-width: 351px;
+}
+.testimonial-buyer-info {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  line-height: 1.3rem;
+  gap: 1.5rem;
+}
+.testimonial-buyer-avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+.testimonial-buyer-name {
+  font-weight: 700;
+}
+.testimonial-buyer-verified {
+  color: var(--SoftPink);
+}
+
+.testimonial-description {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
