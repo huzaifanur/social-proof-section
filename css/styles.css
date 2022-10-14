@@ -54,16 +54,28 @@ section {
 .star-icon-container span {
   margin: 0 0.2rem;
 }
+.content::before {
+  content: url(../images/bg-pattern-top-mobile.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.testimonials::after {
+  content: url("../images/bg-pattern-bottom-mobile.svg");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+/* ---------------- */
+/* Testimonials */
+/* ---------------- */
+
 .testimonials {
   display: flex;
   gap: 1.2rem;
   flex-direction: column;
 }
-
-/* ---------------- */
-/* Testimonial Card */
-/* ---------------- */
-
 .testimonial-card {
   background-color: var(--VeryDarkMagenta);
   color: var(--LightGrayishMagenta);
@@ -93,4 +105,74 @@ section {
   padding: 0.5rem 0;
   font-size: 1rem;
   font-weight: 500;
+}
+
+@media all and (min-width: 800px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section {
+    padding: 0;
+  }
+  .main {
+    height: 587px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1111px;
+    padding: 0;
+    min-height: 587px;
+    gap: 2rem;
+  }
+  .main > * {
+    flex: 0 1 100%;
+  }
+  .content,
+  .testimonials {
+    flex-direction: row;
+  }
+  .content > * {
+    flex: 0 1 100%;
+  }
+  .content-left {
+    text-align: left;
+  }
+  .main-heading {
+    max-width: 335px;
+  }
+  .description {
+    max-width: 412px;
+  }
+  .content-right {
+    margin-top: 1rem;
+  }
+  .content-right > :nth-child(2) {
+    margin-left: 3rem;
+  }
+  .content-right > :nth-child(3) {
+    margin-left: 6rem;
+  }
+  .rating-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .testimonials > :nth-child(1) {
+    margin-bottom: 2rem;
+  }
+  .testimonials > :nth-child(2) {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .testimonials > :nth-child(3) {
+    margin-top: 2rem;
+  }
+  .content::before {
+    content: url("../images/bg-pattern-top-desktop.svg");
+  }
+  .testimonials::after {
+    content: url("../images/bg-pattern-top-desktop.svg");
+  }
 }
